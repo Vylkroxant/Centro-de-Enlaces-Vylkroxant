@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Vylkroxant | Centro Oficial de Enlaces Educativos</title>
+  <meta name="description" content="Entra a tus Aulas ingresando con tu CDI" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500,650,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="style.css" rel="stylesheet">
+  <style>
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand" aria-label="Identidad del sitio">
+      <div aria-hidden="true" style="width: 34px; height: 34px; border-radius: 10px; background: linear-gradient(135deg, var(--brand), #fcfdff); box-shadow: 0 10px 24px rgba(43, 111, 212, 0.22);"></div>
+      Vylkroxant <span class="sub">Curso Libre de Ofimática e Inglés Ofimático</span>
+    </div>
+    <label class="search-field" for="searchInput" aria-label="Buscar tema">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <circle cx="11" cy="11" r="7"></circle>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+      </svg>
+      <input id="searchInput" type="search" placeholder="Buscar por número o título..." autocomplete="off" />
+    </label>
+    <button class="btn" id="btnTop" type="button" title="Ir al inicio" aria-label="Ir al inicio">Inicio ↑</button>
+    <!--button class="btn" id="btnExport" type="button" title="Exportar lista a texto" aria-label="Exportar lista a texto">Exportar ⬇</button-->
+  </header>
+  <main class="wrap" role="main">
+    <section class="hero" aria-label="Introducción">
+      <article class="hero-text">
+        <h2>Canales Oficiales de <em>Vylkroxant</em> para estudiantes</h2>
+        <p style="text-align: justify !important;">Este es el lugar <strong>Oficial</strong> para que puedas visitar tus clases de aprendizaje <code>Vylkroxant</code>. Vylkroxant no ha oficializado ningún otro sitio web en donde estén habilitadas nuestras clases para ustedes nuestros estudiantes.</p>
+        <div class="meta" aria-label="Metadatos" style="display: grid;">
+          <div><strong>Para poder acceder a cualquier aula ingresa tu:</strong> <span>CDI</span></div>
+          <div><strong>Al momento de que ingreses a tu aula revisaremos tu:</strong> <span>CDI</span></div>
+          <div><strong>Si has compartido tu <em>CDI</em> procederemos a:</strong> <span>bloquear</span><strong> tu CDI</strong></div>
+          <div><strong>Evita no compartir este sitio web con terceros, esta es tu:</strong><span> aula </span>y tu <em><strong>responsabilidad.</strong></em></div>
+        </div>
+      </article>
+      <!--aside class="hero-art" aria-hidden="true" title="Gráfico decorativo">VT</aside-->
+    </section>
+    <section aria-label="Listado de temas">
+      <div class="section-head">
+        <h3>Centro General de Aulas</h3>
+        <p>Acceso completo a tus aulas educativas y a nuestros sitios web <code><em><strong>oficiales</strong></em></code>. Si no encuentras tus aulas o se encuentran desabilitados, puedes contactárme directamente a mi número de <strong><em>WhatsApp Oficial</em></strong>.</p>
+      </div>
+      <div class="list">
+        <div class="list-toolbar" role="region" aria-label="Controles de lista">
+          <div class="stats" aria-live="polite"><span id="shownCount">0</span> / <span id="totalCount">0</span> Aulas</div>
+          <div class="chips" role="group" aria-label="Filtros rápidos">
+            <button class="chip" type="button" data-filter="all" aria-pressed="true">Todas las Aulas</button>
+            <button class="chip" type="button" data-filter="MLTSCW" aria-pressed="false">MLTSC Word</button>
+            <button class="chip" type="button" data-filter="MLTSCE" aria-pressed="false">MLTSC Excel</button>
+            <button class="chip" type="button" data-filter="MLTSCA" aria-pressed="false">MLTSC Access</button>
+            <button class="chip" type="button" data-filter="MLTSCT" aria-pressed="false">MLTSC PowerPoint</button>
+            <button class="chip" type="button" data-filter="MLTSCV" aria-pressed="false">MLTSC Visio</button>
+            <button class="chip" type="button" data-filter="MLTSCP" aria-pressed="false">MLTSC Project</button>
+            <button class="chip" type="button" data-filter="MLTSCL" aria-pressed="false">MLTSC Inglés</button>
+          </div>
+        </div>
+        <div class="topics" id="topics" role="list" tabindex="0" aria-label="Lista de temas">
+          <!-- Temas generados dinámicamente -->
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div><strong><em style="font-size: 1.2rem;">Vylkroxant</em></strong> - Nuestro Hogar Educativo es tu Hogar de Aprendizaje</div>
+      <div class="owner">Propietario y Creador - <strong>Técnico Angel Manuel Guevara Chavarría</strong></div>
+    </footer>
+    <div style="text-align: center;">© <span id="yearNow"></span><strong><em>Vylkroxant</em></strong> <em>2021–2026  Todos los Derechos Reservados</em></div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
