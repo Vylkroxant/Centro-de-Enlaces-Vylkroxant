@@ -3,7 +3,7 @@
       { no: '002', titulo: 'Aula Central de Vylkroxant', desc: 'Vamos a tu aula privada de materiales virtuales', tags: ['MLTSCW', 'MLTSCE', 'MLTSCA', 'MLTSCT', 'MLTSCV', 'MLTSCP', 'MLTSCL' ], href: 'https://vylkroxant.github.io/Aula-Vylkroxant/' },
       { no: '003', titulo: 'Gafetes Vylkroxant', desc: 'Completa con tus datos tu Gafete y Validalo', tags: ['MLTSCW', 'MLTSCE', 'MLTSCA', 'MLTSCT', 'MLTSCV', 'MLTSCP', 'MLTSCL' ], href: 'https://vylkroxant.github.io/CDI-Vylkroxant/' },
       { no: '004', titulo: 'Calendarios Vylkroxant', desc: 'Detalla cuando quieres recibir tus clases y Validalo', tags: ['MLTSCW', 'MLTSCE', 'MLTSCA', 'MLTSCT', 'MLTSCV', 'MLTSCP', 'MLTSCL' ], href: 'https://vylkroxant.github.io/Calendario-Vylkroxant/' },
-      { no: '005', titulo: 'Instalación limpia de Windows', desc: 'USB booteable, particiones y drivers esenciales.', tags: ['sistemas'], href: '#' },
+      { no: '005', titulo: 'Centro y Control de Enlaces Vylkroxant', desc: 'Ingresa a todos nuestros enlaces disponibles.', tags: ['MLTSCW', 'MLTSCE', 'MLTSCA', 'MLTSCT', 'MLTSCV', 'MLTSCP', 'MLTSCL' ], href: 'https://vylkroxant.github.io/Centro-de-Enlaces-Vylkroxant/' },
       { no: '006', titulo: 'Respaldo y restauración', desc: 'Imágenes del sistema, puntos de restauración, 3-2-1.', tags: ['sistemas', 'seguridad'], href: '#' },
       { no: '007', titulo: 'Optimización y mantenimiento', desc: 'Rendimiento, servicios, limpieza, buenas prácticas.', tags: ['sistemas', 'seguridad'], href: '#' },
       { no: '008', titulo: 'Gestión de usuarios y permisos', desc: 'Perfiles, UAC, permisos NTFS.', tags: ['sistemas'], href: '#' },
