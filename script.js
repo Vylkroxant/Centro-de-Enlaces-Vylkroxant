@@ -1,3 +1,4 @@
+
 let todosTemas = [];
 let filtroActivo = 'all';
 
@@ -187,3 +188,84 @@ document.getElementById('confirmBtn').onclick = async () => {
         alert("ACCESO DENEGADO: CDI no autorizado.");
     }
 };
+
+document.addEventListener('contextmenu', e => e.preventDefault());
+
+window.addEventListener('keydown', e => {
+
+    if (e.key === 'F12' || e.keyCode === 123) {
+        e.preventDefault();
+        return false;
+    }
+
+    if (e.ctrlKey && (e.key === 'c' || e.key === 'v' || e.key === 'x' || e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 88)) {
+        e.preventDefault();
+        return false;
+    }
+
+    if (e.ctrlKey && (e.key === 'u' || e.key === 's' || e.keyCode === 85 || e.keyCode === 83)) {
+        e.preventDefault();
+        return false;
+    }
+
+    if (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J' || e.key === 'C' || e.keyCode === 73 || e.keyCode === 74 || e.keyCode === 67)) {
+        e.preventDefault();
+        return false;
+    }
+
+    if (e.ctrlKey && (e.key === 'p' || e.keyCode === 80)) {
+        e.preventDefault();
+        return false;
+    }
+}, false);
+
+document.addEventListener('dragstart', e => e.preventDefault());
+
+document.addEventListener('mousedown', e => {
+    if (e.detail > 1) e.preventDefault(); 
+}, false);
+
+(function() {
+    const block = function() {
+        setInterval(function() {
+            (function() {
+                return false;
+            }
+            ['constructor']('debugger')
+            ['call']());
+        }, 50);
+    };
+    try {
+        block();
+    } catch (err) {}
+})();
+
+document.addEventListener('dragstart', function(e) {
+    e.preventDefault();
+    return false;
+}, false);
+
+document.addEventListener('selectstart', function(e) {
+    e.preventDefault();
+    return false;
+}, false);
+
+document.onmousedown = function(e) {
+    if (e.target.tagName === 'IMG') {
+        return false;
+    }
+};
+
+window.addEventListener('keydown', (e) => {
+    
+    const forbiddenKeys = ['g', 'u', 's', 'p', 'c', 'i', 'j'];
+    
+    if (
+        e.key === 'F12' || e.keyCode === 123 ||
+        (e.ctrlKey && forbiddenKeys.includes(e.key.toLowerCase())) ||
+        (e.ctrlKey && e.shiftKey && forbiddenKeys.includes(e.key.toLowerCase()))
+    ) {
+        e.preventDefault();
+        return false;
+    }
+}, false);
