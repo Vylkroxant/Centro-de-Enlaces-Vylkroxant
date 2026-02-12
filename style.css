@@ -71,3 +71,7 @@ footer em {font-style: italic;color: #b0b0b0;}
 .btn-confirm {background: #fff;color: #000;border: none;}
 .btn-cancel {background: transparent;color: #666;border: 1px solid #333;}
 .btn-cancel:hover {color: #fff;border-color: #666;}
+* {-webkit-user-select: none !important;-moz-user-select: none !important;-ms-user-select: none !important;user-select: none !important;-webkit-touch-callout: none !important;-webkit-tap-highlight-color: transparent !important;}
+input {-webkit-user-select: text !important;-moz-user-select: text !important;-ms-user-select: text !important;user-select: text !important;}
+img {pointer-events: none !important;-webkit-user-drag: none !important;user-select: none !important;-moz-user-select: none !important;-webkit-user-select: none !important;-ms-user-select: none !important;}
+@media print {body { display: none !important; }}
