@@ -160,7 +160,7 @@ function verificarYAbrir(url, numero) {
         return;
     }
     pendingUrl = url;
-    document.getElementById('modalDesc').innerText = `Ingrese su CDI para abrir el Aula ${numero}`;
+    document.getElementById('modalDesc').innerText = `Ingrese su CDI para abrir el Aula`;
     document.getElementById('securityModal').style.display = 'flex';
     document.getElementById('modalCDI').focus();
 }
