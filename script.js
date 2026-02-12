@@ -84,7 +84,7 @@ async function verificarYAbrir(url, numero) {
         return;
     }
 
-    const cdiValid = prompt(`SISTEMA VYLKROXANT\nIngrese su CDI para abrir el Aula ${numero}:`);
+    const cdiValid = prompt(`SISTEMA VYLKROXANT\nIngrese su CDI para abrir el Aula:`);
     if (!cdiValid) return;
 
     const { data, error } = await supabaseClient
